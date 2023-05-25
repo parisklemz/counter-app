@@ -83,27 +83,13 @@ class App extends Component {
           onDelete={this.handleDelete}
           />
         <HooksTest />
+        <ApiButton 
+        onPost={this.handlePost}/>
         <button 
         onClick = {intoDyno} 
         >
-          Click
+          Click here
         </button>
-        <button 
-            class="
-            text-blue-500 
-            hover:text-white 
-            hover:bg-blue-500 
-            border border-blue-500 
-            text-xs 
-            font-bold 
-            rounded-full 
-            px-4 py-1 
-            leading-normal"
-            >
-                Click me!
-            </button>
-        <ApiButton 
-        onPost={this.handlePost}/>
         {/* <ApiTest /> */}
         </main>
       </React.Fragment>
