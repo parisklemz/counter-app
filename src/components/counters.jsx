@@ -7,7 +7,7 @@ const Counters = (props) => {
         <div>
             <button 
             onClick={props.onReset}
-            className="btn btn-primary btn-sm m-2"
+            className="m-2 btn btn-primary btn-sm"
             >
                 Reset
                 </button>

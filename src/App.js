@@ -5,6 +5,8 @@ import HooksTest from './components/hookstest';
 import ApiTest from './components/apitest';
 import './index.css';
 import ApiButton from './components/apibutton';
+import ApiToTable from './components/intodynamo';
+import IntoDynoTable from './components/intodynamo';
 
 class App extends Component {
   state = { 
@@ -53,6 +55,22 @@ class App extends Component {
                 .then((json) => console.log(json));      
  }
 
+ handleDynamo = () => {
+  fetch('https://4kqjb4eqtl.execute-api.us-east-2.amazonaws.com/Dev/student', {
+    method: 'POST',
+    body: JSON.stringify({
+      title: 'title',
+      body: 'body',
+      userId: 1,
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  })
+    .then((response) => response.json())
+    .then((json) => console.log(json));   
+ }
+
   render() {
     return (
       <React.Fragment>
@@ -68,6 +86,9 @@ class App extends Component {
         <HooksTest />
         <ApiButton 
         onPost={this.handlePost}/>
+        <ApiTest />
+        <IntoDynoTable 
+        IntoDynamo={this.handleDynamo}/>
         </main>
       </React.Fragment>
     );
