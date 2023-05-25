@@ -86,7 +86,7 @@ class App extends Component {
         <HooksTest />
         <ApiButton 
         onPost={this.handlePost}/>
-        <ApiTest />
+        {/* <ApiTest /> */}
         <IntoDynoTable 
         IntoDynamo={this.handleDynamo}/>
         </main>

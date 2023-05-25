@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 
 // const ApiToTable = ({intoTable}) => {
 //     var inputValue = document.getElementById("myInput").value;
@@ -11,8 +10,6 @@ import React, { Component } from 'react';
 //    );
 // };
 // export default ApiToTable;
-
-import React, { Component, useState, useEffect } from 'react';
 
 const IntoDynoTable = ({IntoDynamo}) => {
     return (
