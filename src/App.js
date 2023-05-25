@@ -54,21 +54,21 @@ class App extends Component {
                 .then((json) => console.log(json));      
  }
 
- handleDynamo = () => {
-  fetch('https://4kqjb4eqtl.execute-api.us-east-2.amazonaws.com/Dev/student', {
-    method: 'POST',
-    body: JSON.stringify({
-      title: 'title',
-      body: 'body',
-      userId: 1,
-    }),
-    headers: {
-      'Content-type': 'application/json; charset=UTF-8',
-    },
-  })
-    .then((response) => response.json())
-    .then((json) => console.log(json));   
- }
+//  handleDynamo = () => {
+//   fetch('https://4kqjb4eqtl.execute-api.us-east-2.amazonaws.com/Dev/student', {
+//     method: 'POST',
+//     body: JSON.stringify({
+//       title: 'title',
+//       body: 'body',
+//       userId: 1,
+//     }),
+//     headers: {
+//       'Content-type': 'application/json; charset=UTF-8',
+//     },
+//   })
+//     .then((response) => response.json())
+//     .then((json) => console.log(json));   
+//  }
 
   render() {
     return (
@@ -86,8 +86,7 @@ class App extends Component {
         <ApiButton 
         onPost={this.handlePost}/>
         {/* <ApiTest /> */}
-        <IntoDynoTable 
-        IntoDynamo={this.handleDynamo}/>
+        <IntoDynoTable />
         </main>
       </React.Fragment>
     );

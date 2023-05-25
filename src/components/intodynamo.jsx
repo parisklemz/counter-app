@@ -11,26 +11,19 @@
 // };
 // export default ApiToTable;
 
-const IntoDynoTable = ({IntoDynamo}) => {
-    return (
-        <div className="button-api">
-          <div class="mt-4">
-            <button 
-            class="
-            text-blue-500 
-            hover:text-white 
-            hover:bg-blue-500 
-            border border-blue-500 
-            text-xs 
-            font-bold 
-            rounded-full 
-            px-4 py-1 
-            leading-normal"
-            >
-                Send Data!
-            </button>
-            </div>
-        </div>
-    );
+const IntoDynoTable = () => {
+    fetch('https://4kqjb4eqtl.execute-api.us-east-2.amazonaws.com/Dev/student', {
+    method: 'POST',
+    body: JSON.stringify({
+      title: 'title',
+      body: 'body',
+      userId: 1,
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  })
+    .then((response) => response.json())
+    .then((json) => console.log(json));   
 }
 export default IntoDynoTable;
