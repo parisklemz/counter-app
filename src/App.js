@@ -5,7 +5,7 @@ import HooksTest from './components/hookstest';
 import ApiTest from './components/apitest';
 import './index.css';
 import ApiButton from './components/apibutton';
-import IntoDynoTable from './components/intodynamo';
+import intoDyno from './components/intodynamo';
 
 class App extends Component {
   state = { 
@@ -83,10 +83,14 @@ class App extends Component {
           onDelete={this.handleDelete}
           />
         <HooksTest />
+        <button 
+        onClick = {intoDyno} 
+        >
+          Click
+        </button>
         <ApiButton 
         onPost={this.handlePost}/>
         {/* <ApiTest /> */}
-        <IntoDynoTable />
         </main>
       </React.Fragment>
     );

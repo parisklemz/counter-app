@@ -11,11 +11,11 @@
 // };
 // export default ApiToTable;
 
-const IntoDynoTable = () => {
+const intoDyno = () => {
     fetch('https://4kqjb4eqtl.execute-api.us-east-2.amazonaws.com/Dev/student', {
     method: 'POST',
     body: JSON.stringify({
-      title: 'title',
+      Student_ID: 'title',
       body: 'body',
       userId: 1,
     }),
@@ -26,4 +26,4 @@ const IntoDynoTable = () => {
     .then((response) => response.json())
     .then((json) => console.log(json));   
 }
-export default IntoDynoTable;
+export default intoDyno;
