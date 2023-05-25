@@ -5,7 +5,6 @@ import HooksTest from './components/hookstest';
 import ApiTest from './components/apitest';
 import './index.css';
 import ApiButton from './components/apibutton';
-import ApiToTable from './components/intodynamo';
 import IntoDynoTable from './components/intodynamo';
 
 class App extends Component {

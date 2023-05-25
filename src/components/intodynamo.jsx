@@ -16,7 +16,6 @@ const IntoDynoTable = ({IntoDynamo}) => {
         <div className="button-api">
           <div class="mt-4">
             <button 
-            onClick={IntoDynamo}
             class="
             text-blue-500 
             hover:text-white 
