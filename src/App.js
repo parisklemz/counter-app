@@ -89,7 +89,6 @@ class App extends Component {
           Click
         </button>
         <button 
-            onClick={onPost}
             class="
             text-blue-500 
             hover:text-white 
